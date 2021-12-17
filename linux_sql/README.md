@@ -5,9 +5,13 @@ specifications of each node and monitor node resource usages
 in real-time and stores the data in a database.
 
 The technologies that used in this project are:
-* Bash
+* GIT
 * PSQl
 * Docker
+* Bash Scriot
+* IntelliJ IDEA
+* Jarvis Remote Desktop (JRD)
+* Google Cloud Platform (GCP)
 
 
 # Quick Start
@@ -46,7 +50,7 @@ Finally, using SQL queries we can get the requested information from the
 database.
 
 ## Architecture
-!(/assets/cluster.png)
+![](./assets/cluster.png)
 
 ## Scripts
 * psql_docker.sh: Shell script to create, start, or stop the
@@ -71,3 +75,50 @@ from host_info.sh and host_usage.sh.
 * queries.sql: contains some SQL queries.
 
 ## Database Modeling
+The Database contains two tables that are used to store the following data:
+
+**host_info table:**
+
+ | **Column** | **Type** |
+ |----------| --- |
+ | id | SERIAL   |
+ | hostname | VARCHAR  |
+ | cpu_number | INTEGER  |
+ | cpu_architecture | VARCHAR  |
+ | cpu_model | VARCHAR  |
+ | cpu_mhz | FLOAT    |
+ | L2_cache | INTEGER  |
+ | total_mem | INTEGER  |
+ | timestamp | TIMESTAMP |
+
+
+
+**host_usage table:**
+
+| **Column** | **Type** |
+|----------| --- |
+| timestamp | TIMESTAMP   |
+| host_id | SERIAL  |
+| memory_free | INTEGER  |
+| cpu_idle | INTEGER  |
+| cpu_kernel | INTEGER  |
+| disk_io | INTEGER    |
+| disk_available | INTEGER  |
+
+
+# Test
+* The bash scripts were tested manually using command line. 
+* The SQL queries were tested using sample data to ensure that the result are correct.
+
+# Deployment
+All the script files were deployed from the JRD to GitHub. 
+And used Docker to provision the PostgreSQL database.
+
+# Improvements
+
+1. Add more SQL queries to test the script.
+2. Add more tables for other information.
+3. Add more sample data and test the SQL queries.
+
+
+
