@@ -23,7 +23,7 @@ cpu_idle=$(echo "$vmstat_mb" | egrep -v 'cpu|id' | awk '{ print $15 }' | xargs)
 cpu_kernel=$(echo "$vmstat_mb" | egrep -v 'cpu|id' | awk '{ print $14 }' | xargs)
 disk_io=$(vmstat -d | awk '{print $10}' | tail -1 | xargs)
 disk_available=$(df -BM / | egrep "^/dev/sda2" | awk '{print $4}' | sed 's/.$//' | xargs)
-timestamp=$(date +"%Y-%m-%d %T")
+timestamp=$(vmstat -t | tail -1 | awk '{print $18 " " $19}' | xargs)
 
 #Subquery to find matching id in host_info table
 host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
