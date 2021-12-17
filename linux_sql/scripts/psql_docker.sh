@@ -49,6 +49,9 @@ start|stop)
   fi
     #Start or stop the container
 	docker container $option jrvs-psql
+
+
+
   exit $?
 	;;
 
