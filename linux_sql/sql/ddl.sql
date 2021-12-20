@@ -1,7 +1,7 @@
-#switch to host_agent database
+--switch to host_agent database
 \c host_agent
 
-#Create a table to store hardware specifications
+--Create a table to store hardware specifications
 CREATE TABLE PUBLIC.host_info
 (
      id                 SERIAL    NOT NULL PRIMARY KEY,
@@ -13,9 +13,9 @@ CREATE TABLE PUBLIC.host_info
      L2_cache           INTEGER   NOT NULL,
      total_mem          INTEGER   NOT NULL,
      "timestamp"        TIMESTAMP NOT NULL
-)
+);
 
-#Create a table to resource usage data
+--Create a table to resource usage data
 CREATE TABLE PUBLIC.host_usage
 (
      "timestamp"      TIMESTAMP  NOT NULL,
@@ -25,4 +25,4 @@ CREATE TABLE PUBLIC.host_usage
      cpu_kernel       INTEGER    NOT NULL,
      disk_io          INTEGER    NOT NULL,
      disk_available   INTEGER    NOT NULL
-)
+);

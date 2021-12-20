@@ -1,5 +1,5 @@
 
-#create function that round timestamp to the nearest 5-minute
+--create function that round timestamp to the nearest 5-minute
 CREATE FUNCTION round5(ts timestamp) RETURNS timestamp AS
 $$
 BEGIN
@@ -9,7 +9,7 @@ $$
     LANGUAGE PLPGSQL;
 
 
-#query to group hosts by CPU number and sort by their memory size in descending order
+--query to group hosts by CPU number and sort by their memory size in descending order
 SELECT
     cpu_number,
     id AS host_id,
@@ -18,7 +18,7 @@ FROM host_info
 ORDER BY cpu_number, total_mem DESC;
 
 
-#query to calculate average used memory in percentage over 5 mins interval for each host_id
+--query to calculate average used memory in percentage over 5 mins interval for each host_id
 SELECT
     host_usage.host_id, host_info.hostname AS host_name,
     round5(host_usage.timestamp) AS timestamp,
@@ -28,7 +28,7 @@ GROUP BY timestamp, host_name, host_usage.host_id,
 ORDER BY avg_used_mem_percentage;
 
 
-#query to detect host failures.
+--query to detect host failures.
 SELECT
     host_id,
     round5(timestamp) AS timestamp,

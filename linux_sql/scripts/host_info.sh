@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#assign CLI arguments to variablespsql_host=$1
+#assign CLI arguments to variables
+psql_host=$1
 psql_port=$2
 db_name=$3
 psql_user=$4

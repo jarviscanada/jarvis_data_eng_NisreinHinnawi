@@ -26,11 +26,11 @@ disk_available=$(df -BM / | egrep "^/dev/sda2" | awk '{print $4}' | sed 's/.$//'
 timestamp=$(vmstat -t | tail -1 | awk '{print $18 " " $19}' | xargs)
 
 #Subquery to find matching id in host_info table
-host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
+#host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
 
 #Inserts server usage data into host_usage table
 insert_stmt="INSERT INTO host_usage (timestamp, host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
-VALUES ('$timestamp', (SELECT id FROM host_info WHERE hostname='$host_name'), '$memory_free', '$cpu_idle', '$cpu_kernel',
+VALUES ('$timestamp', (SELECT id FROM host_info WHERE hostname='$hostname'), '$memory_free', '$cpu_idle', '$cpu_kernel',
 '$disk_io', '$disk_available');"
 
 #set up env var for pql cmd
