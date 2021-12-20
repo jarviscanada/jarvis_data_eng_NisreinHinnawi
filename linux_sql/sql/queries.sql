@@ -23,8 +23,8 @@ SELECT
     host_usage.host_id, host_info.hostname AS host_name,
     round5(host_usage.timestamp) AS timestamp,
     AVG(host_info.total_mem - host_usage.memory_free)/AVG(host_info.total_mem)*100 AS avg_used_mem_percentage
-FROM host_ifo JOIN host_usage ON host_info.id = host_usage.host_id
-GROUP BY timestamp, host_name, host_usage.host_id,
+FROM host_info JOIN host_usage ON host_info.id = host_usage.host_id
+GROUP BY timestamp, host_name, host_usage.host_id
 ORDER BY avg_used_mem_percentage;
 
 
