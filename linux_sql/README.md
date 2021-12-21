@@ -8,7 +8,7 @@ The technologies that used in this project are:
 * GIT
 * PSQl
 * Docker
-* Bash Scriot
+* Bash Script
 * IntelliJ IDEA
 * Jarvis Remote Desktop (JRD)
 * Google Cloud Platform (GCP)
@@ -42,7 +42,7 @@ bash> crontab -e
 ```
 
 # Implemenation
-To implement this project, first we have to c to set up a PSQL instance using Docker.
+To implement this project, first we have to set up a PSQL instance using Docker.
 Then, using Bash script we will collect the hardware information and the 
 resource usage. Then, create ddl script to help us create tables to store hardware specifications
 and to resource usage data.
@@ -111,8 +111,8 @@ The Database contains two tables that are used to store the following data:
 * The SQL queries were tested using sample data to ensure that the result are correct.
 
 # Deployment
-All the script files were deployed from the JRD to GitHub. 
-And used Docker to provision the PostgreSQL database.
+* All the script files were deployed from the JRD to GitHub. 
+* And used Docker to provision the PostgreSQL database.
 
 # Improvements
 
