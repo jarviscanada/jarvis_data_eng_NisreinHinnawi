@@ -1,0 +1,156 @@
+# Preferred name (Characters only)
+name: "Nisrein Hinnawi"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_NisreinHinnawi
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "I have Bachelor's degree in Computer Science Program ,and I have Diploma degree in Computer Programmer Program. I'm Highly motivated, passionate, and ready for software development challenges. I have an outstanding ability to quickly learn and apply new programming skills to a wide range of applications. I'm excellent with data analysis and modeling skills and have a solid understanding of Object-Oriented Programming. I can apply OOP principles in software design and implementations in Java, and C/C++. Also, I'm proficient in Eclipse, Android Studio, Microsoft Visual Studio, and NetBeans."
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - C/C++
+    - JavaScript
+    - HTML/CSS
+    - RDBMS/SQL
+    - Linux/Bash
+    - Agile/Scrum
+    - Git
+  # At least 5 skills
+  competent:
+    - Docker
+    - Eclipse
+    - NetBeans
+    - MS.net
+    - Android Studio
+    - Visual  Studio 
+    - Visual Studio Code
+  # At least 5 skills
+  familiar:
+    - Java SDK
+    - Android SDK
+    - Angular.js
+    - Xamarin
+    - IBM Zeus
+    - Hadoop framework
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a Linux monitoring agent that helps the user to record and monitor hardware specifications and usage information for multiple Linux systems in real-time and stores the data in a database. The program was developed in Bash and tested on a virtual machine that uses Centos 7 distribution, and the Docker container was used to provision the PostgreSQL database.
+
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "CuteMe API"
+    #URL is optional 
+
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "The application idea is to show the users list of adoptable animals and allow them to get details about the animal, browse their photos, and mark any as favorite. The app provides the user with many functionalities."
+
+  - name: "Traveling Website"
+    git_url: "https://github.com/nesreen-henawi/WEB322"
+    description: "Build a travel website that allows people to book rooms around the world, the website has many functionalities that allow the users to search and find what they want fast and easily."
+
+  - name: "247 Garage Sale Website"
+    git_url: "https://github.com/nesreen-henawi/247GarageSale"
+    description: "the idea of the website is to do an online garage sale. the website has many sections such as toys section, home tools section, and more sections. Each section includes pictures, descriptions, and prices for each item."
+
+
+  - name: "Live Video Editor"
+
+    description: "Face detection and identity hiding:a smart tool in order to hide people's identities from others while streaming live videos on TV or on the internet."
+
+
+  - name: "Graduation Project"
+
+    description: "Processing large-scale streaming data with Spark Using DBLP dataset with more than 3.3 million records."
+
+  - name: "Guessing Game"
+
+    description: "Designing and developing an animals guessing game, the game is like a puzzle game the user has to solve it and guess what animal is in the puzzle, and when it is solved the user will see a photo of the animal and hear the animal voice."
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2021-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "working as a team in an agile environment, doing daily scrums to discuss our work. Design and develop many software projects using different technologies such as Docker, Bash, PSQL, and Java."
+
+
+#List of edcuation
+education: 
+  - school_name: "Seneca College"
+    duration: "2019-2021"
+    degree: "Diploma in Computer Programmer Program"
+    department: "Software Design & Data Science"
+    # optional
+    awards_achievements: 
+      - "Graduating with honors"
+      - "GPA: 3.9/4.0"
+
+  - school_name: "Seneca College"
+    duration: "2018-2019"
+    degree: "Certificate in Academic and Career Entrance Program"
+    department: "Arts & Science"
+    awards_achievements: 
+      - "GPA: 3.7/4.0"
+
+  - school_name: "Jordan University of Science and Technology"
+    duration: "2013-2017"
+    degree: "Bachelor's Degree in Computer Science Program"
+    department: "Computer and Information Technology"
+    awards_achievements: 
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "EMC Academic Associate Certificate(2017)"
+ 
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Competitive gaming"
+      - "Walking"
+      - "Soccer"
+
+
+
+
+

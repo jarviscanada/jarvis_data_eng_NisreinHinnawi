@@ -1,0 +1,155 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Graduating with honors",
+        "GPA: 3.9/4.0"
+      ],
+      "degree": "Diploma in Computer Programmer Program",
+      "department": "Software Design \u0026 Data Science",
+      "duration": "2019-2021",
+      "school_name": "Seneca College"
+    },
+    {
+      "awards_achievements": [
+        "GPA: 3.7/4.0"
+      ],
+      "degree": "Certificate in Academic and Career Entrance Program",
+      "department": "Arts \u0026 Science",
+      "duration": "2018-2019",
+      "school_name": "Seneca College"
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor's Degree in Computer Science Program",
+      "department": "Computer and Information Technology",
+      "duration": "2013-2017",
+      "school_name": "Jordan University of Science and Technology"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_NisreinHinnawi",
+  "highlighted_projects": [
+    {
+      "description": "The application idea is to show the users list of adoptable animals and allow them to get details about the animal, browse their photos, and mark any as favorite. The app provides the user with many functionalities.",
+      "name": "CuteMe API"
+    },
+    {
+      "description": "Build a travel website that allows people to book rooms around the world, the website has many functionalities that allow the users to search and find what they want fast and easily.",
+      "git_url": "https://github.com/nesreen-henawi/WEB322",
+      "name": "Traveling Website"
+    },
+    {
+      "description": "the idea of the website is to do an online garage sale. the website has many sections such as toys section, home tools section, and more sections. Each section includes pictures, descriptions, and prices for each item.",
+      "git_url": "https://github.com/nesreen-henawi/247GarageSale",
+      "name": "247 Garage Sale Website"
+    },
+    {
+      "description": "Face detection and identity hiding:a smart tool in order to hide people's identities from others while streaming live videos on TV or on the internet.",
+      "name": "Live Video Editor"
+    },
+    {
+      "description": "Processing large-scale streaming data with Spark Using DBLP dataset with more than 3.3 million records.",
+      "name": "Graduation Project"
+    },
+    {
+      "description": "Designing and developing an animals guessing game, the game is like a puzzle game the user has to solve it and guess what animal is in the puzzle, and when it is solved the user will see a photo of the animal and hear the animal voice.",
+      "name": "Guessing Game"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed a Linux monitoring agent that helps the user to record and monitor hardware specifications and usage information for multiple Linux systems in real-time and stores the data in a database. The program was developed in Bash and tested on a virtual machine that uses Centos 7 distribution, and the Docker container was used to provision the PostgreSQL database.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Nisrein Hinnawi",
+  "others": [
+    {
+      "bullets": [
+        "EMC Academic Associate Certificate(2017)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Competitive gaming",
+        "Walking",
+        "Soccer"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "working as a team in an agile environment, doing daily scrums to discuss our work. Design and develop many software projects using different technologies such as Docker, Bash, PSQL, and Java.",
+      "duration": "2021-present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Docker",
+      "Eclipse",
+      "NetBeans",
+      "MS.net",
+      "Android Studio",
+      "Visual  Studio",
+      "Visual Studio Code"
+    ],
+    "familiar": [
+      "Java SDK",
+      "Android SDK",
+      "Angular.js",
+      "Xamarin",
+      "IBM Zeus",
+      "Hadoop framework"
+    ],
+    "proficient": [
+      "Java",
+      "C/C++",
+      "JavaScript",
+      "HTML/CSS",
+      "RDBMS/SQL",
+      "Linux/Bash",
+      "Agile/Scrum",
+      "Git"
+    ]
+  },
+  "summary": "I have Bachelor's degree in Computer Science Program ,and I have Diploma degree in Computer Programmer Program. I'm Highly motivated, passionate, and ready for software development challenges. I have an outstanding ability to quickly learn and apply new programming skills to a wide range of applications. I'm excellent with data analysis and modeling skills and have a solid understanding of Object-Oriented Programming. I can apply OOP principles in software design and implementations in Java, and C/C++. Also, I'm proficient in Eclipse, Android Studio, Microsoft Visual Studio, and NetBeans."
+}
