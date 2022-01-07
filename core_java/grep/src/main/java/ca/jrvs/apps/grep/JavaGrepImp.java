@@ -12,19 +12,38 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JavaGrepImp implements JavaGrep{
+public class JavaGrepImp implements JavaGrep {
   static final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
 
   private String regex;
   private String rootPath;
   private String outFile;
 
+  public static void main(String[] args) {
+    if (args.length != 3) {
+      throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
+    }
+
+    BasicConfigurator.configure();
+    JavaGrepImp javaGrepImp = new JavaGrepImp();
+    javaGrepImp.setRegex(args[0]);
+    javaGrepImp.setRootPath(args[1]);
+    javaGrepImp.getOutFile(args[2]);
+
+    try {
+      javaGrepImp.process();
+    } catch (Exception ex) {
+      JavaGrepImp.logger.error("Error Unable to process: ", ex);
+    }
+  }
+
   @Override
   public void process() throws IOException {
-    List<String> matchedLines = new ArrayList<String>();
-    for (File file : listFiles(rootPath)){
-      for(String line : readLines(file)) {
-        if(containsPattern(line)) {
+    List<String> matchedLines = new ArrayList<>();
+    List<File> files = listFiles(rootPath);
+    for (File file : files) {
+      for (String line : readLines(file)) {
+        if (containsPattern(line)) {
           matchedLines.add(line);
         }
       }
@@ -33,15 +52,26 @@ public class JavaGrepImp implements JavaGrep{
   }
 
   @Override
-  public List<File> listFiles(String rootDir) throws IOException{
-    List<File> fileList = new ArrayList<File>();
-    File [] files = new File(rootDir).listFiles();
+  public List<File> listFiles(String rootDir) {
+    List<File> filesList = new ArrayList<>();
+    File directory = new File(rootDir);
+    if(directory.isFile()) {
+      filesList.add(directory);
+      return filesList;
+    }
+
+    File[] files = directory.listFiles();
+    if(files == null) return filesList;
+
     for (File file : files) {
-      if(file.isFile()) {
-        fileList.add(file);
+      if (file.isFile()) {
+        filesList.add(file);
+      } else if(file.isDirectory()) {
+        List<File> result = listFiles(file.getAbsolutePath());
+        filesList.addAll(result);
       }
     }
-    return fileList;
+    return filesList;
   }
 
   @Override
@@ -49,34 +79,27 @@ public class JavaGrepImp implements JavaGrep{
     FileReader fileReader = new FileReader(inputFile);
     BufferedReader bufferedReader = new BufferedReader(fileReader);
     List<String> linesList = new ArrayList<>();
-    String line = bufferedReader.readLine();
+    String line;
 
-    while (line != null){
+    while ((line = bufferedReader.readLine()) != null) {
       linesList.add(line);
-      linesList.add("\n");
     }
     bufferedReader.close();
-
     return linesList;
   }
 
   @Override
   public boolean containsPattern(String line) {
-    if(line.matches(regex)){
-      return true;
-    }
-    return false;
+    return line.matches(regex);
   }
 
   @Override
   public void writeToFile(List<String> lines) throws IOException {
-    FileWriter fileWriter = new FileWriter(rootPath + "/" + outFile);
+    FileWriter fileWriter = new FileWriter(outFile);
     BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
     for (String write : lines) {
       bufferedWriter.write(write);
-      bufferedWriter.write("\n");
-
+      bufferedWriter.newLine();
     }
     bufferedWriter.close();
   }
@@ -110,23 +133,4 @@ public class JavaGrepImp implements JavaGrep{
   public void getOutFile(String outFile) {
     this.outFile = outFile;
   }
-
-  public static void main(String[] args) {
-  if(args.length != 3) {
-    throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
-  }
-
-    BasicConfigurator.configure();
-    JavaGrepImp javaGrepImp = new JavaGrepImp();
-    javaGrepImp.setRegex(args[0]);
-    javaGrepImp.setRootPath(args[1]);
-    javaGrepImp.getOutFile(args[2]);
-
-    try {
-      javaGrepImp.process();
-    } catch (Exception ex) {
-      JavaGrepImp.logger.error("Error Unable to process: ", ex);
-    }
-  }
-
 }
