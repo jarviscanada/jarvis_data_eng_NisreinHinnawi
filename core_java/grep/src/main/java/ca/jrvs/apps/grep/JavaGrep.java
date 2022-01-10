@@ -18,7 +18,7 @@ public interface JavaGrep {
    * @param rootDir input directory
    * @return files under the rootDir
    */
-  List<File> listFiles(String rootDir) ;
+  List<File> listFiles(String rootDir) throws IOException;
 
 
   /**
@@ -56,7 +56,6 @@ public interface JavaGrep {
 
   String getOutFile();
 
-  void getOutFile(String outFile);
-
+   void setOutFile(String outFile);
 
 }

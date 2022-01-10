@@ -28,7 +28,7 @@ public class JavaGrepImp implements JavaGrep {
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
     javaGrepImp.setRootPath(args[1]);
-    javaGrepImp.getOutFile(args[2]);
+    javaGrepImp.setOutFile(args[2]);
 
     try {
       javaGrepImp.process();
@@ -52,7 +52,7 @@ public class JavaGrepImp implements JavaGrep {
   }
 
   @Override
-  public List<File> listFiles(String rootDir) {
+  public List<File> listFiles(String rootDir) throws IOException {
     List<File> filesList = new ArrayList<>();
     File directory = new File(rootDir);
     if(directory.isFile()) {
@@ -130,7 +130,7 @@ public class JavaGrepImp implements JavaGrep {
   }
 
   @Override
-  public void getOutFile(String outFile) {
+  public void setOutFile(String outFile) {
     this.outFile = outFile;
   }
 }
