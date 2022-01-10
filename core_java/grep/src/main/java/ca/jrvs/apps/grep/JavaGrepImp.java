@@ -1,11 +1,12 @@
 package ca.jrvs.apps.grep;
 
+
+import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import org.apache.log4j.BasicConfigurator;
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JavaGrepImp implements JavaGrep {
-  static final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+  private static final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
 
   private String regex;
   private String rootPath;
