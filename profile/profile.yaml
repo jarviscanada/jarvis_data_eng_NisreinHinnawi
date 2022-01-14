@@ -1,0 +1,141 @@
+# Preferred name (Characters only)
+name: "Nisrein Hinnawi"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_NisreinHinnawi
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I completed a Bachelor's degree in Computer Science from Jordan University of Science and Technology and a Diploma degree in Computer Programming from Seneca College with honor, and I have a. During my studies, I have grown immense interest and enthusiasm in the field of research and development due to its innovative nature. Thinking out of the box, implementing new ideas, and finally developing those ideas into innovations are some of the main reasons which attract me into this field. I can work on different project platforms built with Java, C/C++, or C#. I can adapt and be an active team member in a short time, learn quickly new techniques and software as I have a strong and thorough understanding of programming languages, and meet stringent deadlines if required.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - C/C++
+    - JavaScript
+    - HTML/CSS
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+  # At least 5 skills
+  competent:
+    - Docker
+    - IntelliJ
+    - Eclipse 
+    - Visual  Studio 
+    - Visual Studio Code
+    - .NET(C#)
+  # At least 5 skills
+  familiar:
+    - Java SDK
+    - Angular.js
+    - Xamarin
+    - IBM Zeus
+    - Hadoop framework
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a Linux monitoring agent that helps the user record and monitors hardware specifications and usage information (e.g. CPU, RAM, Disk, etc.) for a Linux cluster in real-time and stores the data in a PostgreSQL database. The program was developed in Bash Scripts and tested on a virtual machine that uses CentOS 7 distribution, and the Docker container was used to provision the PostgreSQL database.
+#  - name: "Core Java Apps"
+#    git_url: "/core_java"
+#    description:
+#      - "Twitter App: Not started yet"
+#      - "JDBC App: In progress."
+#      - "Grep App: In progress."
+#  - name: "Springboot App"
+#    git_url: "/springboot"
+#    description: ""
+#  - name: "Python Data Analytics"
+#    git_url: "/python_data_anlytics"
+#    description: ""
+#  - name: "Hadoop"
+#    git_url: "/hadoop"
+#    description: ""
+#  - name: "Spark"
+#    git_url: "/spark"
+#    description: ""
+#  - name: "Cloud/DevOps"
+#    git_url: "/cloud_devops"
+#    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "CuteMe Application"
+    #URL is optional
+    git_url: 
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Built an Application using Client/Server architecture using Xamarin platform (C# Language) to show the users list of adoptable animals and allow them to get details about the animal, browse their photos, and mark any as favorite. The data was retrieved by using RESTful API services from Petfinder.com and was cached using SQLite for optimization. The Client-side has been implemented using an MVVM architectural pattern to keep the View and the logic separated. The application was tested using a real phone and emulator. 
+  - name: "Live Video Editor"
+
+    description: Implemented face detection and identity hiding application using Java language to hide people's identities from others while streaming live videos on TV or the internet. OpenCV was used to perform image processing and to run object detection algorithms for human faces and then pixelate or replace the detected area with a staging image to hide the user identity. 
+  - name: "DBLP Fast Searching Graduation Project"
+
+    description: Processed large-scale streaming data using Spark/Scala and Apache Hadoop. Operated huge data using DBLP dataset with more than 3.3 million records. DBLP was converted from XML to JSON using Java to make it easy for humans to read and write, and easy for machines to parse and generate. Represented DBLP data set using Postgres SQL database. The application was tested on an Ubuntu machine and using SQL queries. 
+  - name: "My Airbnb Web Application"
+    git_url: https://github.com/nesreen-henawi/WEB322
+    description: Built a travel website using Client/Server architecture using the Node JS platform to allow travellers to find a place to stay around the world, the website has many functionalities that allow the users to search and find what they want fast and easily. MongoDB was used to store user data, reservation data, and room information.
+  - name: "247 Garage Sale Web Application"
+    git_url: https://github.com/nesreen-henawi/247GarageSale
+    description: Built a garage sale website using JavaScript language to do online garage sale shopping. The website has many sections and items that the user can browse by pictures, descriptions, and prices for each item. HTML was used to structure the website content, and CSS was used to define the style of the web pages.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2020-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Worked as a Software Developer to develop various types of projects using a variety of technologies such as Linux, PostgreSQL, Java, Maven, Git, and IntelliJ.  Worked within a scrum team to deliver the projects by following the Agile framework. Played the team lead role and held the daily scrum, also helped the team solve any impediments."
+
+#List of edcuation
+education: 
+  - school_name: "Seneca College"
+    duration: "2019-2021"
+    degree: "Diploma in Computer Programmer Program"
+    department: "Software Design & Data Science"
+    # optional
+    awards_achievements: 
+      - "Graduating with honors"
+      - "GPA: 3.9/4.0"
+
+  - school_name: "Seneca College"
+    duration: "2018-2019"
+    degree: "Certificate in Academic and Career Entrance Program"
+    department: "Arts & Science"
+    awards_achievements: 
+      - "GPA: 3.7/4.0"
+
+  - school_name: "Jordan University of Science and Technology"
+    duration: "2013-2017"
+    degree: "Bachelor's Degree in Computer Science Program"
+    department: "Computer and Information Technology"
+    awards_achievements: 
+
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "EMC Academic Associate Certificate(2017)"
+ 
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Soccer fan"
+
+
+
+
+
