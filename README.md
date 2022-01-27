@@ -32,11 +32,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NisreinHin
 
 ## Professional Experiences
 
-<<<<<<< HEAD
-**Software Developer, Jarvis (2020-present)**: Worked as a Software Developer to develop various types of projects using a variety of technologies such as Linux, PostgreSQL, Java, Maven, Git, and IntelliJ.  Worked within a scrum team to deliver the projects by following the Agile framework. Played the team lead role and held the daily scrum, also helped the team solve any impediments.
-=======
 **Software Developer, Jarvis (2021-present)**: Worked as a Software Developer to develop various types of projects using a variety of technologies such as Linux, PostgreSQL, Java, Maven, Git, and IntelliJ.  Worked within a scrum team to deliver the projects by following the Agile framework. Played the team lead role and held the daily scrum, also helped the team solve any impediments.
->>>>>>> feature/profile
 
 
 ## Education
@@ -51,10 +47,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NisreinHin
 
 
 ## Miscellaneous
-<<<<<<< HEAD
 - EMC Academic Associate Certificate(2017)
-- Soccer fan
-
-=======
-- EMC Academic Associate Certificate(2017)
->>>>>>> feature/profile
