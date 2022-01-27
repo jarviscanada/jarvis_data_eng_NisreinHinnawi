@@ -67,19 +67,26 @@
         "EMC Academic Associate Certificate(2017)"
       ],
       "title": "Certificates"
+<<<<<<< HEAD
     },
     {
       "bullets": [
         "Soccer fan"
       ],
       "title": "Activities/Hobbies"
+=======
+>>>>>>> feature/profile
     }
   ],
   "professional_experience": [
     {
       "company": "Jarvis",
       "description": "Worked as a Software Developer to develop various types of projects using a variety of technologies such as Linux, PostgreSQL, Java, Maven, Git, and IntelliJ.  Worked within a scrum team to deliver the projects by following the Agile framework. Played the team lead role and held the daily scrum, also helped the team solve any impediments.",
+<<<<<<< HEAD
       "duration": "2020-present",
+=======
+      "duration": "2021-present",
+>>>>>>> feature/profile
       "title": "Software Developer"
     }
   ],

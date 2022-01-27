@@ -94,7 +94,11 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
+<<<<<<< HEAD
     duration: "2020-present"
+=======
+    duration: "2021-present"
+>>>>>>> feature/profile
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Worked as a Software Developer to develop various types of projects using a variety of technologies such as Linux, PostgreSQL, Java, Maven, Git, and IntelliJ.  Worked within a scrum team to deliver the projects by following the Agile framework. Played the team lead role and held the daily scrum, also helped the team solve any impediments."
 
@@ -131,9 +135,15 @@ others:
     bullets:
       - "EMC Academic Associate Certificate(2017)"
  
+<<<<<<< HEAD
   - title: "Activities/Hobbies"
     bullets:
       - "Soccer fan"
+=======
+#  - title: "Activities/Hobbies"
+#    bullets:
+#      - "Soccer fan"
+>>>>>>> feature/profile
 
 
 
