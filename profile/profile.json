@@ -58,6 +58,14 @@
       "description": "Developed a Linux monitoring agent that helps the user record and monitors hardware specifications and usage information (e.g. CPU, RAM, Disk, etc.) for a Linux cluster in real-time and stores the data in a PostgreSQL database. The program was developed in Bash Scripts and tested on a virtual machine that uses CentOS 7 distribution, and the Docker container was used to provision the PostgreSQL database.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "JDBC App: Implemented Java program to learn about JDBC (Java Database connectivity) and data access-designed patterns. The application uses JDBC to connect Java to the PostgreSQL database for running queries and perform the CRUD (Create, Read, Update, and Delete) operations on the local PostgreSQL instance via transactions. Docker container was used to provision the PostgreSQL database. SQL scripts were used to create the database and its tables. The program was tested by executing the same queries once inside the database instance, and once using JDBCExecuter class to ensure that the results are the same.",
+        "Grep App:  Implemented JavaGrep application using Java 8 and its latest feature Stream API and Lambda, the application similar to the Linux built-in grep feature, it searches for a text pattern recursively in a given directory, and outputs matched lines to a file.  The program was compiled using the Maven tool, packaged using Docker, pushed to Docker Hub, and deployed to GitHub. The program was tested on sample text files that contain different amounts of data. Then the results were stored in an output text file."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
     }
   ],
   "name": "Nisrein Hinnawi",
