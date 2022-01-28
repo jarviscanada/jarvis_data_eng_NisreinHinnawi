@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.service.TwitterServiceIntTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.365 s <<< FAILURE! - in ca.jrvs.apps.twitter.service.TwitterServiceIntTest
+showTweet(ca.jrvs.apps.twitter.service.TwitterServiceIntTest)  Time elapsed: 0.084 s  <<< ERROR!
+java.lang.RuntimeException: Unable to convert JSON string to Object
+	at ca.jrvs.apps.twitter.service.TwitterServiceIntTest.showTweet(TwitterServiceIntTest.java:55)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "truncated" (class ca.jrvs.apps.twitter.model.Tweet), not marked as ignorable (10 known properties: "entities", "favorited", "created_at", "id", "favorite_count", "id_str", "retweet_count", "coordinates", "text", "retweeted"])
+ at [Source: (String)"{"created_at":"Mon Feb 28 19:27:07 +0000 2022","id":1498379253892714505,"id_str":"1498379253892714505","text":"No one can make you feel inferior without your consent","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca href=\"https:\/\/jrvs.ca\" rel=\"nofollow\"\u003ejrvs-twitter-app\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":"[truncated 1456 chars]; line: 1, column: 185] (through reference chain: ca.jrvs.apps.twitter.model.Tweet["truncated"])
+	at ca.jrvs.apps.twitter.service.TwitterServiceIntTest.showTweet(TwitterServiceIntTest.java:55)
+
+deleteTweets(ca.jrvs.apps.twitter.service.TwitterServiceIntTest)  Time elapsed: 0.132 s  <<< ERROR!
+java.lang.RuntimeException: Unexpected HTTP status: 404
+	at ca.jrvs.apps.twitter.service.TwitterServiceIntTest.deleteTweets(TwitterServiceIntTest.java:62)
+
+postTweet(ca.jrvs.apps.twitter.service.TwitterServiceIntTest)  Time elapsed: 0.148 s  <<< ERROR!
+java.lang.RuntimeException: Unexpected HTTP status: 403
+	at ca.jrvs.apps.twitter.service.TwitterServiceIntTest.postTweet(TwitterServiceIntTest.java:45)
+
