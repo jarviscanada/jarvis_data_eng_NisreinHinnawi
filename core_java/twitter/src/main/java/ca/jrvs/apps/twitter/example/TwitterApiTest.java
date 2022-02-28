@@ -12,10 +12,11 @@ import org.apache.http.util.EntityUtils;
 
 
 public class TwitterApiTest {
-  private static String CONSUMER_KEY = System.getenv("YGeLzdNcwkWt5pPOD7amY4V3x");
-  private static String CONSUMER_SECRET = System.getenv("Y3vRwbyPibCGhsjZgMqADGKXpcHuBkUPl0fWeTpK5Bwif9rIIe");
-  private static String ACCESS_TOKEN = System.getenv("1007602087780286464-dhMNCmJMtCYK7msMzSxfiLD1p4bLQd");
-  private static String TOKEN_SECRET = System.getenv("5qpps1KsVGWlNN9z9GAiDKAeUMIFa5ZqvOLWoj76gAGsZ");
+  private static String CONSUMER_KEY = System.getenv("consumerKey");
+  private static String CONSUMER_SECRET = System.getenv("consumerSecret");
+  private static String ACCESS_TOKEN = System.getenv("accessToken");
+  private static String TOKEN_SECRET = System.getenv("tokenSecret");
+
 
   public static void main(String[] args) throws Exception{
     OAuthConsumer consumer = new CommonsHttpOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
