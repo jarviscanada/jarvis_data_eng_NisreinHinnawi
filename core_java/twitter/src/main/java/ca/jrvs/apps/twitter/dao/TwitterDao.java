@@ -67,19 +67,24 @@ public class TwitterDao implements CrdDao<Tweet,String>{
   }
 
 
-  private Tweet parseResponseBody(HttpResponse response, int statusCode) {
+  private Tweet parseResponseBody(HttpResponse response, Integer statusCode) {
     Tweet tweet = null;
     int status = response.getStatusLine().getStatusCode();
 
-    if (status!= HTTP_OK) {
+    if (status != statusCode) {
       throw new RuntimeException("Unexpected HTTP status: " + status);
     }
     if (response.getEntity() == null){
-      throw new RuntimeException("Response has no Entities.");
+      throw new RuntimeException("Response has no body.");
+    }
+    String jsonStr;
+    try {
+      jsonStr = EntityUtils.toString(response.getEntity());
+    } catch (IOException e) {
+      throw new RuntimeException("Failed to convert entity to string", e);
     }
     try {
-      String str = EntityUtils.toString(response.getEntity());
-      tweet = JsonParser.toObjectFromJson(str, Tweet.class);
+      tweet = JsonParser.toObjectFromJson(jsonStr, Tweet.class);
     } catch (IOException e){
       throw new RuntimeException("Unable to convert JSON string to Object", e);
     }

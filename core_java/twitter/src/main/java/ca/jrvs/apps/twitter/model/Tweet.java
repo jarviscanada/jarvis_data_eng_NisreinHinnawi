@@ -1,15 +1,17 @@
 package ca.jrvs.apps.twitter.model;
 
+import java.math.BigInteger;
+
 public class Tweet {
   private String created_at;
 
-  private int id;
+  private BigInteger id;
   private String id_str;
   private String text;
   private Entities entities;
   private Coordinates coordinates;
-  private int retweet_count;
-  private int favorite_count;
+  private Integer retweet_count;
+  private Integer favorite_count;
   private Boolean favorited;
   private Boolean retweeted;
 
@@ -17,7 +19,7 @@ public class Tweet {
     this.created_at = created_at;
   }
 
-  public void setId(Integer id) {
+  public void setId(BigInteger id) {
     this.id = id;
   }
 
@@ -57,7 +59,7 @@ public class Tweet {
     return created_at;
   }
 
-  public int getId() {
+  public BigInteger getId() {
     return id;
   }
 
@@ -77,11 +79,11 @@ public class Tweet {
     return coordinates;
   }
 
-  public int getRetweet_count() {
+  public Integer getRetweet_count() {
     return retweet_count;
   }
 
-  public int getFavorite_count() {
+  public Integer getFavorite_count() {
     return favorite_count;
   }
 

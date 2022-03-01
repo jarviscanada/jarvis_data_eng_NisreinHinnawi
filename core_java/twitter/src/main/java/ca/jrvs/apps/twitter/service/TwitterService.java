@@ -12,6 +12,7 @@ public class TwitterService implements Service{
 
   @Autowired
   public TwitterService(CrdDao dao) {
+
     this.dao = dao;
   }
 

@@ -29,7 +29,7 @@ public class TwitterDaoIntTest {
 
   @Test
   public void create() {
-    String text ="No one can make you feel inferior without your consent";
+    String text ="No one can make you feel inferior without your consent2";
     Double longitude = 1d;
     Double latitude = -1d;
     List<Double> coordinatesList = new ArrayList<>();
@@ -53,8 +53,8 @@ public class TwitterDaoIntTest {
 
   @Test
   public void findById() {
-    String postID = "1498362736388063235";
-    String expectedText ="never give up on the things that make you smile :)";
+    String postID = "1498379253892714505";
+    String expectedText ="No one can make you feel inferior without your consent";
     Tweet tweet = dao.findById(postID);
     Assert.assertEquals(expectedText, tweet.getText());
     Assert.assertEquals(postID, tweet.getId_str());
@@ -62,7 +62,7 @@ public class TwitterDaoIntTest {
 
   @Test
   public void deleteById() {
-    String postID = "1498363688008491009";
+    String postID = "1498702274524295169";
     Tweet tweet = dao.deleteById(postID);
     Assert.assertEquals(postID, tweet.getId_str());
 
